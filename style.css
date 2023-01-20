@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 20px;
+    background: linear-gradient(200deg,  white, white, white, black);
+    background-size: 120% 120%;
+    animation: move-bg 25s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes move-bg {
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%, 50%;
+    }
+   
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+p{
+    padding: 0;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.header__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+
+.header__top{
+    padding-top: 50px;
+}
+
+.main__logo{
+    font-size: 50px;
+    margin-right: 40px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: .3s ease;
+    
+}
+
+.main__logo:hover{
+    position: relative;
+    color: black;
+    border: 3px solid black;
+    transition: .3s ease;
+}
+
+.logo_nav{
+    margin-right: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: .3s ease;
+}
+
+.logo_nav:last-child{
+    margin-right: 0;
+}
+
+
+
+.logo_nav:hover{
+    position: relative;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transition: .3s ease;
+}
+
+.nav{
+    display: flex;
+  position: relative;
+  width: 50%;    
+}
+
+.Store{
+    margin-right: 50px;
+}
+
+.hm_img{
+    width: 150px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.aaa{
+    justify-content: center;
+    align-items: center;
+    text-align: center;margin-bottom: 20px;
+}
+.ggg{
+    text-align: center;
+}
+
+.hm_img2{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
